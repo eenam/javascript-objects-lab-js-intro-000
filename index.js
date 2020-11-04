@@ -17,5 +17,6 @@ function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
 // 2) does not modify the original object (it is non-destructive)
 
 function deleteFromObjectByKey(object, key) {
-  
+  delete object.key;
+  return object;
 }
